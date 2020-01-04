@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Link, graphql, useStaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
+import { Link } from 'gatsby';
 
-const ImageBackground = styled(BackgroundImage)`
+const ImageBackground = styled('div')`
+  background-image: url('/images/zhang-kaiyv-beijing.jpg');
   background-position: top 20% center;
   background-size: cover;
   height: 50vh;
 
-  /* override the default margin for sibling elements  */
   + * {
     margin-top: 0;
   }
@@ -40,20 +39,9 @@ const TextBox = styled('div')`
 `;
 
 const Hero = () => {
-  const { image } = useStaticQuery(graphql`
-    query {
-      image: file(relativePath: { eq: "beijingshimen.JPG" }) {
-        sharp: childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-
   return (
-    <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
+    // We don't do any sharp process for hero image yet
+    <ImageBackground>
       <TextBox>
         <h1>Frontend Masters + Gatsby &hearts;</h1>
         <p>
@@ -61,7 +49,7 @@ const Hero = () => {
         </p>
       </TextBox>
     </ImageBackground>
-  );
+  )
 };
 
 export default Hero;
