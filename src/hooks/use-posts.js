@@ -20,6 +20,7 @@ const usePosts = () => {
     title: post.frontmatter.title,
     author: post.frontmatter.allMdx,
     slug: post.frontmatter.slug,
+    image: post.frontmatter.image,
     excerpt: post.excerpt,
   }));
 };

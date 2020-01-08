@@ -58,6 +58,11 @@ const Layout = ({ children }) => {
           li {
             margin-top: 0.25rem;
           }
+
+          p {
+            font-style: italic;
+            padding: 1rem 0 0 0;
+          }
         `}
       />
       <Helmet>

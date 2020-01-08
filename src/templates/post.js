@@ -10,6 +10,7 @@ export const query = graphql`
       frontmatter {
         title
         author
+        content
       }
     }
   }
@@ -26,7 +27,6 @@ const PostTemplate = ({ pageContext }) => (
       Posted by who
     </p>
     <pre>{JSON.stringify(pageContext, null, 2)}</pre>
-    <p>Post body goes here</p>
     <ReadLink to="/">&larr; back to posts</ReadLink>
   </Layout>
 );

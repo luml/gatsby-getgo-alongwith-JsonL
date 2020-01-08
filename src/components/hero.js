@@ -45,11 +45,11 @@ const Hero = () => {
       <TextBox>
         <h1>Frontend Masters + Gatsby &hearts;</h1>
         <p>
-          Hello Bejing! <Link to="/about/">Learn about me &rarr;</Link>
+          Hello from Beijing! <Link to="/about/">Learn about me &rarr;</Link>
         </p>
       </TextBox>
     </ImageBackground>
-  )
+  );
 };
 
 export default Hero;
