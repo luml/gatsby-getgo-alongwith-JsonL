@@ -14,7 +14,8 @@ const ImageBackground = styled(BackgroundImage)`
 `;
 
 const TextBox = styled('div')`
-  background-image: linear-gradient(to top, #ddbbffdd 2rem, #ddbbff00);
+  /*to top, #ddbbffdd 2rem, #ddbbff00 */
+  background-image: linear-gradient(to top, #65e9a380 2rem, #9198e500);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -23,7 +24,7 @@ const TextBox = styled('div')`
   width: 100%;
 
   h1 {
-    text-shadow: 1px 1px 3px #eeddff66;
+    text-shadow: 1px 1px 3px #65e9a380;
     font-size: 2.25rem;
   }
 
