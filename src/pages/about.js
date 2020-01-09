@@ -1,11 +1,27 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { css } from '@emotion/core';
+import Img from 'gatsby-image';
 
-const About = () => (
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "profileElio.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 550, height: 650) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
+
+const About = ({ data }) => (
   <Layout>
     <h1>Elio here,</h1>
+    <Img fixed={data.file.childImageSharp.fixed} />
     <p>
       This is my first blog website, so far I really don't know what I wanna
       post. But I promise myself I will come back frequently.
