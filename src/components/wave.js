@@ -8,7 +8,7 @@ const Wave = () => {
   return (
     <button
       css={css`
-        background: rebeccapurple;
+        background: teal;
         border: none;
         color: white;
         font-size: 1.25rem;

@@ -17,7 +17,7 @@ const usePosts = () => {
               }
             }
           }
-          excerpt
+          excerpt(pruneLength: 50)
         }
       }
     }

@@ -30,13 +30,6 @@ const PostTemplate = ({ data: { mdx: post } }) => (
     >
       Posted by {post.frontmatter.author}
     </p>
-    <img
-      css={css`
-        max-width: 550px;
-      `}
-      src={post.frontmatter.image.publicURL}
-      alt="blog"
-    />
     <MDXRenderer>{post.body}</MDXRenderer>
     <ReadLink to="/">&larr; back to all posts</ReadLink>
   </Layout>
