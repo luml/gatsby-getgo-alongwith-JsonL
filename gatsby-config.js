@@ -33,5 +33,26 @@ module.exports = {
         path: 'images',
       },
     },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: {
+          development: 'https://api.github.com/users/luml/repos',
+          production: 'https://api.github.com/users/luml/repos',
+        },
+        rootKey: "posts",
+        schemas: {
+          posts: `
+            url: String
+            name: String
+            description: String
+          `,
+          owner: `
+            login: String
+            repos_url: String
+          `,
+        },
+      },
+    },
   ],
 };

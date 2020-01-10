@@ -8,6 +8,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      allPosts {
+        nodes {
+          url
+          name
+          description
+          owner {
+            login
+          }
+        }
+      }
     }
   `);
 
