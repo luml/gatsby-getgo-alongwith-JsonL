@@ -32,7 +32,13 @@ const Insta = () => {
             `}
             href={`https://github.com/${login}/${hub.name}`}
           >
-            <h3>{hub.name}</h3>
+            <h3
+              css={css`
+                text-decoration: none;
+              `}
+            >
+              {hub.name}
+            </h3>
             {hub.homepage !== '' && (
               <a
                 css={css`
@@ -48,9 +54,13 @@ const Insta = () => {
               <p
                 css={css`
                   color: peru;
+                  text-decoration: none;
                 `}
               >
-                coming soon 💪
+                coming soon{' '}
+                <span role="img" aria-label="siteUrl">
+                  💪
+                </span>
               </p>
             )}
           </a>
