@@ -33,14 +33,15 @@ const Insta = () => {
             href={`https://github.com/${login}/${hub.name}`}
           >
             <h3>{hub.name}</h3>
-            <p
+            <a
               css={css`
-                text-decoration: underline;
+                color: darkcyan;
               `}
+              href={`${hub.homepage}`}
             >
-              {hub.description}
-            </p>
-            {/* <Image></Image> */}
+              {hub.homepage}👉🏻
+            </a>
+            <p>{hub.description}</p>
           </a>
         ))}
       </div>
