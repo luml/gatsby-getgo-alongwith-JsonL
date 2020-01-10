@@ -49,7 +49,6 @@ const Insta = () => {
                 {hub.homepage} 👉🏻
               </a>
             )}
-            <p>{hub.description}</p>
             {hub.homepage === '' && (
               <p
                 css={css`
@@ -57,12 +56,13 @@ const Insta = () => {
                   text-decoration: none;
                 `}
               >
-                coming soon{' '}
+                coming soon
                 <span role="img" aria-label="siteUrl">
                   💪
                 </span>
               </p>
             )}
+            {hub.description !== 'null' && <p>{hub.description}</p>}
           </a>
         ))}
       </div>
