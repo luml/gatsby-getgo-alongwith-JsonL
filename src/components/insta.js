@@ -40,10 +40,19 @@ const Insta = () => {
                 `}
                 href={`${hub.homepage}`}
               >
-                {hub.homepage}👉🏻
+                {hub.homepage} 👉🏻
               </a>
             )}
             <p>{hub.description}</p>
+            {hub.homepage === '' && (
+              <p
+                css={css`
+                  color: peru;
+                `}
+              >
+                coming soon 💪
+              </p>
+            )}
           </a>
         ))}
       </div>
