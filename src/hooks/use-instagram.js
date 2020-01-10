@@ -3,13 +3,16 @@ import { graphql, useStaticQuery } from 'gatsby';
 const useInstagram = () => {
   const data = useStaticQuery(graphql`
     query {
-      allPosts(limit: 10, filter: { fork: { eq: false } }) {
+      allPosts(
+        limit: 20
+        filter: { fork: { eq: false }, homepage: { ne: null } }
+      ) {
         nodes {
           url
           name
-          description
           homepage
           fork
+          description
           owner {
             login
           }
