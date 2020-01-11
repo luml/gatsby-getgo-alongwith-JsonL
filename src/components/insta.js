@@ -12,6 +12,7 @@ const Insta = () => {
         css={css`
           display: grid;
           max-width: 550px;
+          justify-items: stretch;
         `}
       >
         {instaPosts.map(hub => (
@@ -43,10 +44,14 @@ const Insta = () => {
               <a
                 css={css`
                   color: darkcyan;
+                  text-decoration: none;
                 `}
                 href={`${hub.homepage}`}
               >
-                {hub.homepage} 👉🏻
+                {hub.homepage}
+                <span role="img" aria-label="homepage-url">
+                  👉🏻
+                </span>
               </a>
             )}
             {hub.homepage === '' && (
