@@ -16,7 +16,7 @@ const Insta = () => {
         `}
       >
         {instaPosts.map(hub => (
-          <a
+          <div
             css={css`
               box-shadow: 0;
               display: block;
@@ -31,12 +31,12 @@ const Insta = () => {
                 z-index: 10;
               }
             `}
-            href={`https://github.com/${login}/${hub.name}`}
           >
             <h3
               css={css`
                 text-decoration: none;
               `}
+            //   href={`https://github.com/${login}/${hub.name}`}
             >
               {hub.name}
             </h3>
@@ -68,7 +68,7 @@ const Insta = () => {
               </p>
             )}
             {hub.description !== 'null' && <p>{hub.description}</p>}
-          </a>
+          </div>
         ))}
       </div>
       <a href={`https://github.com/${login}`}>See more on Github &rarr;</a>
