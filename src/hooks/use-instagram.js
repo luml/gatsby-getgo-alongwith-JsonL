@@ -4,6 +4,7 @@ const useInstagram = () => {
   const data = useStaticQuery(graphql`
     query {
       allPosts(
+        sort: { fields: id__normalized, order: DESC }
         limit: 20
         filter: { fork: { eq: false }, homepage: { ne: null } }
       ) {

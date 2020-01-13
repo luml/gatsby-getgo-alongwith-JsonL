@@ -20,6 +20,7 @@ module.exports = {
       },
     },
     {
+      // how to sort files by date
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
@@ -40,7 +41,7 @@ module.exports = {
           development: 'https://api.github.com/users/luml/repos',
           production: 'https://api.github.com/users/luml/repos',
         },
-        rootKey: "posts",
+        rootKey: 'posts',
         schemas: {
           posts: `
             url: String
