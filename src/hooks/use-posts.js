@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const usePosts = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(sort: { fields: frontmatter___time, order: DESC }) {
+      allMdx(sort: { fields: frontmatter___time, order: DESC }, limit: 3) {
         nodes {
           frontmatter {
             title

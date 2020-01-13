@@ -10,9 +10,16 @@ const Insta = () => {
       <h2>Github repos from @{login}</h2>
       <div
         css={css`
-          display: grid;
-          max-width: 550px;
-          justify-items: stretch;
+           {
+            display: grid;
+            max-width: 550px;
+            justify-items: stretch;
+            grid-template-columns: repeat(2, 49%);
+            grid-gap: 0.3rem;
+          }
+          :first-of-type {
+            margin-top: 1rem;
+          }
         `}
       >
         {instaPosts.map(hub => (
@@ -21,6 +28,7 @@ const Insta = () => {
               box-shadow: 0;
               display: block;
               max-width: calc(100%);
+              height: auto;
               transition: 200ms box-shadow linear;
               padding: 0.5rem 0 0.5rem 0.2rem;
               text-decoration: none;
@@ -36,7 +44,7 @@ const Insta = () => {
               css={css`
                 text-decoration: none;
               `}
-            //   href={`https://github.com/${login}/${hub.name}`}
+              //   href={`https://github.com/${login}/${hub.name}`}
             >
               {hub.name}
             </h3>
@@ -68,6 +76,15 @@ const Insta = () => {
               </p>
             )}
             {hub.description !== 'null' && <p>{hub.description}</p>}
+            <img
+              alt="Kitten"
+              src="http://placekitten.com/300/300"
+              css={css`
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+              `}
+            />
           </div>
         ))}
       </div>
