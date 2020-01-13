@@ -9,6 +9,7 @@ const useInstagram = () => {
         filter: { fork: { eq: false }, homepage: { ne: null } }
       ) {
         nodes {
+          id
           url
           name
           homepage
@@ -23,6 +24,7 @@ const useInstagram = () => {
   `);
 
   return data.allPosts.nodes.map(node => ({
+    id: node.id,
     url: node.url,
     name: node.name,
     description: node.description,
