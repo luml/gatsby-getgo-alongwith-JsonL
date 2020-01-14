@@ -6,11 +6,11 @@ import Img from 'gatsby-image';
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "profileElio.jpg" }) {
+    file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 550, height: 650) {
+        fixed(width: 190, height: 230, grayscale: true) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -20,8 +20,33 @@ export const query = graphql`
 
 const About = ({ data }) => (
   <Layout>
-    <h1>Elio here,</h1>
-    <Img fixed={data.file.childImageSharp.fixed} />
+    <div
+      css={css`
+         {
+          display: flex;
+          flex-direction: row-reverse;
+          background: #22222222;
+          box-shadow: 0 1px 10px #22222244;
+        }
+      `}
+    >
+      <Img
+        css={css`
+          margin-top: -1rem;
+        `}
+        fixed={data.file.childImageSharp.fixed}
+        alt="a profile picture"
+      />
+      <h1
+        css={css`
+           {
+            margin: 4.5rem 2rem;
+          }
+        `}
+      >
+        Say hi
+      </h1>
+    </div>
     <p>
       This is my first blog website, so far I really don't know what I wanna
       post. But I promise myself I will come back frequently.
