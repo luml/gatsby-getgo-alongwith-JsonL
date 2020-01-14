@@ -23,7 +23,8 @@ const Insta = () => {
         `}
       >
         {instaPosts.map(hub => (
-          <div key={hub.id}
+          <div
+            key={hub.id}
             css={css`
               box-shadow: 0 2px 10px #22222244;
               border-radius: 0.2rem;
@@ -34,11 +35,14 @@ const Insta = () => {
               padding: 0.5rem 0 0.5rem 0.2rem;
               text-decoration: none;
               padding: 0.5rem;
+              transition: 0.5s;
 
               :focus,
               :hover {
                 box-shadow: 0 4px 25px #22222244;
                 z-index: 10;
+                background: #22222222;
+                transform: translate(0.2rem, -0.4rem);
               }
             `}
           >
