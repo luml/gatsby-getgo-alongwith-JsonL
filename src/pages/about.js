@@ -27,6 +27,7 @@ const About = ({ data }) => (
           flex-direction: row-reverse;
           background: #22222222;
           box-shadow: 0 1px 10px #22222244;
+          height: 210px;
         }
       `}
     >
@@ -37,6 +38,26 @@ const About = ({ data }) => (
         fixed={data.file.childImageSharp.fixed}
         alt="a profile picture"
       />
+
+      <p
+        css={css`
+           {
+            width: 35%;
+            font-size: small;
+            font-family: -apple-system-body;
+            direction: rtl;
+            margin-right: 1rem;
+
+            :first-letter {
+              font-size: 20px;
+              color: #000000;
+            }
+          }
+        `}
+      >
+        This is my first blog website, so far I really don't know what I wanna
+        post. But I promise myself I will come back frequently
+      </p>
       <h1
         css={css`
            {
@@ -47,10 +68,6 @@ const About = ({ data }) => (
         Say hi
       </h1>
     </div>
-    <p>
-      This is my first blog website, so far I really don't know what I wanna
-      post. But I promise myself I will come back frequently.
-    </p>
     <p
       css={css`
         font-style: italic;

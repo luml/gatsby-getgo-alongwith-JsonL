@@ -17,7 +17,7 @@ const Insta = () => {
             grid-template-columns: repeat(2, 49%);
             grid-gap: 0.3rem;
           }
-          div:first-of-type {
+          > div:first-of-type {
             margin-top: 1rem;
           }
         `}
@@ -46,14 +46,34 @@ const Insta = () => {
               }
             `}
           >
-            <h3
+            <div
               css={css`
-                text-decoration: none;
+                 {
+                  display: flex;
+                  flex-direction: row;
+                }
               `}
-              //   href={`https://github.com/${login}/${hub.name}`}
             >
-              {hub.name}
-            </h3>
+              <img
+                alt="Kitten"
+                src="http://placekitten.com/300/300"
+                css={css`
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                `}
+              />
+              <h3
+                css={css`
+                  text-decoration: none;
+                  margin: 0 0 0 5px;
+                `}
+                //   href={`https://github.com/${login}/${hub.name}`}
+              >
+                {hub.name}
+              </h3>
+            </div>
+
             {hub.homepage !== '' && (
               <a
                 css={css`
@@ -81,16 +101,18 @@ const Insta = () => {
                 </span>
               </p>
             )}
-            {hub.description !== 'null' && <p>{hub.description}</p>}
-            <img
-              alt="Kitten"
-              src="http://placekitten.com/300/300"
-              css={css`
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-              `}
-            />
+            {hub.description !== 'null' && (
+              <p
+                css={css`
+                   {
+                    font-size: smaller;
+                    font-style: italic;
+                  }
+                `}
+              >
+                {hub.description}
+              </p>
+            )}
           </div>
         ))}
       </div>

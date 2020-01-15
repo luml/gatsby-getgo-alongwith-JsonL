@@ -25,6 +25,7 @@ class PostTemplate extends React.Component {
 
     return (
       <Layout>
+        <ReadLink to="/">&larr; back to all posts</ReadLink>
         <h1>{post.frontmatter.title}</h1>
         <p
           css={css`
@@ -61,7 +62,6 @@ class PostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
-        <ReadLink to="/">&larr; back to all posts</ReadLink>
       </Layout>
     );
   }
