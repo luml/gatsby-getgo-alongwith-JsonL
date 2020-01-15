@@ -12,24 +12,16 @@ export const query = graphql`
       frontmatter {
         title
         author
-        image {
-          publicURL
-        }
       }
       body
     }
   }
 `;
 
-// TODO react component render
 class PostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx;
-    // const siteTitle = this.props.data.site.siteMetadata.title;
-    // TODO What is markdownRemark
-    debugger;
     const { previous, next } = this.props.pageContext;
-    debugger;
 
     return (
       <Layout>
@@ -55,40 +47,24 @@ class PostTemplate extends React.Component {
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <Link to={previous.frontmatter.slug} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <Link to={next.frontmatter.slug} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               )}
             </li>
           </ul>
         </nav>
-
         <ReadLink to="/">&larr; back to all posts</ReadLink>
       </Layout>
     );
   }
 }
-
-// const PostTemplate = ({ data: { mdx: post } }) => (
-//   <Layout>
-//     <h1>{post.frontmatter.title}</h1>
-//     <p
-//       css={css`
-//         font-size: 0.75rem;
-//       `}
-//     >
-//       Posted by {post.frontmatter.author}
-//     </p>
-//     <MDXRenderer title={post.title}>{post.body}</MDXRenderer>
-//     <ReadLink to="/">&larr; back to all posts</ReadLink>
-//   </Layout>
-// );
 
 export default PostTemplate;
