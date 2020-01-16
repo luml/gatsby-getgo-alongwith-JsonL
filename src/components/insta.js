@@ -56,7 +56,7 @@ const Insta = () => {
             >
               <img
                 alt="Kitten"
-                src="http://placekitten.com/300/300"
+                src="https://placekitten.com/300/300"
                 css={css`
                   width: 30px;
                   height: 30px;
