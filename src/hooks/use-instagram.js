@@ -5,7 +5,7 @@ const useInstagram = () => {
     query {
       allPosts(
         sort: { fields: id__normalized, order: DESC }
-        limit: 6
+        limit: 20
         filter: { fork: { eq: false }, homepage: { ne: null } }
       ) {
         nodes {

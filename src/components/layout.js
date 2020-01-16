@@ -7,6 +7,10 @@ import Helmet from 'react-helmet';
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
+  function goTop() {
+    window.scroll({ top: 0 });
+  }
+
   return (
     <>
       <Global
@@ -74,6 +78,14 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
+      <button
+        css={css`
+          margin-left: 48.5%;
+        `}
+        onClick={goTop}
+      >
+        Top
+      </button>
       <footer
         css={css`
           font-size: small;
