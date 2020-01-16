@@ -76,12 +76,12 @@ const Layout = ({ children }) => {
       </main>
       <footer
         css={css`
+          font-size: small;
           display: flex;
           justify-content: center;
         `}
       >
         © {new Date().getFullYear()}, Built with
-        {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
     </>
