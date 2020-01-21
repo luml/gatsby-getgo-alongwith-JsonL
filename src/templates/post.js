@@ -12,6 +12,7 @@ export const query = graphql`
       frontmatter {
         title
         author
+        time
       }
       body
     }
@@ -32,7 +33,7 @@ class PostTemplate extends React.Component {
             font-size: 0.75rem;
           `}
         >
-          Posted by {post.frontmatter.author}
+          {post.frontmatter.time}, posted by {post.frontmatter.author},
         </p>
         <MDXRenderer title={post.title}>{post.body}</MDXRenderer>
 
