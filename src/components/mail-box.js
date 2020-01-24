@@ -5,6 +5,7 @@ const Mailbox = () => {
   return (
     <div
       css={css`
+        display: flex;
         background: radial-gradient(circle at top right, teal, transparent);
         border: none;
         color: white;
@@ -12,8 +13,22 @@ const Mailbox = () => {
         max-width: 550px;
       `}
     >
-      Please note that you may not reach me. This is because I am nobody and far
-      away and probably didn’t see you.
+      <p>
+        Please note that you may not reach me. This is because I am nobody and
+        far away and probably didn’t see you.
+      </p>
+      <a
+        css={css`
+          height: 25px;
+          margin: 1px auto;
+        `}
+        href="https://www.instagram.com/eliolou01/"
+      >
+        <img
+          src="https://img.icons8.com/doodle/48/000000/instagram-new.png"
+          alt="icons8.com ins icon"
+        />
+      </a>
     </div>
   );
 };
