@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import { css } from '@emotion/core';
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 20% center;
@@ -59,6 +60,14 @@ const Hero = () => {
         <p>
           Hello from Beijing! <Link to="/about/">Learn about me &rarr;</Link>
         </p>
+        <h6
+          css={css`
+            font-style: italic;
+            opacity: 0.7;
+          `}
+        >
+          --Thank you a thousand for reading my blog--
+        </h6>
       </TextBox>
     </ImageBackground>
   );

@@ -93,8 +93,8 @@ const Layout = ({ children }) => {
           justify-content: center;
         `}
       >
-        © {new Date().getFullYear()}, Built with
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        © {new Date().getFullYear()}, Built with{' '}
+        <a href="https://www.gatsbyjs.org">&nbsp;Gatsby</a>
       </footer>
     </>
   );
