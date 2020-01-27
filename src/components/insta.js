@@ -30,7 +30,7 @@ const Insta = () => {
               border-radius: 0.2rem;
               display: block;
               max-width: calc(100%);
-              height: 255px;
+              height: auto;
               transition: 200ms box-shadow linear;
               padding: 0.5rem 0 0.5rem 0.2rem;
               text-decoration: none;
@@ -44,6 +44,8 @@ const Insta = () => {
                 background: #22222222;
                 transform: translate(0.2rem, -0.4rem);
               }
+
+              ${'' /* reft transfrom to right, right transfrom to left */}
             `}
           >
             <div
@@ -54,7 +56,7 @@ const Insta = () => {
                 }
               `}
             >
-              <img
+              {/* <img
                 alt="Kitten"
                 src="https://placekitten.com/300/300"
                 css={css`
@@ -62,7 +64,8 @@ const Insta = () => {
                   height: 30px;
                   border-radius: 50%;
                 `}
-              />
+              /> */}
+              🐱
               <h3
                 css={css`
                   text-decoration: none;
@@ -79,6 +82,41 @@ const Insta = () => {
                 css={css`
                   color: darkcyan;
                   text-decoration: none;
+                  font-size: smaller;
+
+                  > span {
+                    animation-name: flow-and-shake;
+                    animation-duration: calc(var(--speed) * 1s);
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                  }
+
+                  @keyframes flow-and-shake {
+                    0%,
+                    100% {
+                      transform: translate(
+                          calc(var(--x) * -1%),
+                          calc(var(--y) * -1%)
+                        )
+                        rotate(calc(var(--rotation) * -1deg));
+                    }
+                    50% {
+                      transform: translate(
+                          calc(var(--x) * 1%),
+                          calc(var(--y) * 1%)
+                        )
+                        rotate(calc(var(--rotation) * 1deg));
+                    }
+                  }
+
+                  ${'' /* couldn't animate */}
+
+                  :hover > span {
+                    --speed: 0.1;
+                    --x: 1;
+                    --y: -1;
+                    --rotation: -1;
+                  }
                 `}
                 href={`${hub.homepage}`}
               >
