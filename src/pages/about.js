@@ -57,6 +57,8 @@ const About = ({ data }) => (
       >
         This is my first blog website, so far I really don't know what I wanna
         post. But I promise myself I will come back frequently
+        <br></br>
+        <Link to="/resume/">&rarr;See my resume</Link>
       </p>
       <h1
         css={css`
