@@ -40,6 +40,61 @@ const Layout = ({ children }) => {
               margin-top: 0;
             }
           }
+          ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
+          body {
+            background-color: white;
+            color: black;
+            transition: all 0.3s ease-in-out;
+          }
+          body.dark {
+            background-color: black;
+            color: white;
+            transition: all 0.3s ease-in-out;
+
+            header {
+              background: black;
+              a {
+                color: white;
+              }
+              button {
+                background: black;
+              }
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            em,
+            strong,
+            article {
+              color: white;
+            }
+            div.say-hi {
+              background: teal;
+            }
+            div.grid-system {
+              background: teal;
+              > a {
+                color: hotPink;
+              }
+            }
+            .head-hero {
+              h1,
+              p,
+              h6 {
+                color: black;
+              }
+            }
+          }
+
+          ${'' /* @media screen and (prefers-color-scheme: dark) {
+            body {
+              background-color: black;
+              color: white;
+            }
+          } */}
 
           h1,
           h2,

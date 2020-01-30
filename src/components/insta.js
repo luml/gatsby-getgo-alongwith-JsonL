@@ -24,6 +24,7 @@ const Insta = () => {
       >
         {instaPosts.map(hub => (
           <div
+            className="grid-system"
             key={hub.id}
             css={css`
               box-shadow: 0 2px 10px #22222244;

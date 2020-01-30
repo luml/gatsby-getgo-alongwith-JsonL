@@ -48,8 +48,43 @@ const Header = () => (
       <NavLink to="/contact/" activeClassName="current-page">
         Contact
       </NavLink>
+      <button
+        css={css`
+          width: 30px;
+          border: 0;
+          margin-top: 0;
+          background: #eee;
+          margin-left: 0.5rem;
+          transform: scale(1.7);
+        `}
+        onClick={changeMode}
+      >
+        <span role="img" aria-label="Active mode">
+          🌙
+        </span>
+      </button>
     </nav>
   </header>
 );
+
+function changeMode() {
+  if (document.querySelector('body').classList.contains('dark')) {
+    window.localStorage.setItem('theme', 'light');
+    document.querySelector('body').classList.remove('dark');
+    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌙';
+  } else {
+    window.localStorage.setItem('theme', 'dark');
+    document.querySelector('body').classList.add('dark');
+    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
+  }
+
+  // TODO when change page, should import the useState hook from react ?
+  // if (window.localStorage.getItem('theme') === 'dark') {
+  //   document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
+  // }
+  // if (window.localStorage.getItem('theme') === 'light') {
+  //   document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌙';
+  // }
+}
 
 export default Header;
