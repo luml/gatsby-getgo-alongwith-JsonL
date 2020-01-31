@@ -56,6 +56,9 @@ const Layout = ({ children }) => {
               a {
                 color: white;
               }
+              a.current-page {
+                border-bottom: 1px solid #eee;
+              }
               button {
                 background: black;
               }

@@ -77,14 +77,6 @@ function changeMode() {
     document.querySelector('body').classList.add('dark');
     document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
   }
-
-  // TODO when change page, should import the useState hook from react ?
-  // if (window.localStorage.getItem('theme') === 'dark') {
-  //   document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
-  // }
-  // if (window.localStorage.getItem('theme') === 'light') {
-  //   document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌙';
-  // }
 }
 
 export default Header;

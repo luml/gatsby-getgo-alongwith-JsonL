@@ -39,7 +39,6 @@ const About = ({ data }) => (
         fixed={data.file.childImageSharp.fixed}
         alt="a profile picture"
       />
-
       <p
         css={css`
            {
@@ -51,7 +50,6 @@ const About = ({ data }) => (
 
             :first-letter {
               font-size: 20px;
-              color: #000000;
             }
           }
         `}
