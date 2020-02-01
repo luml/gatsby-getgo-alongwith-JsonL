@@ -52,7 +52,7 @@ const Header = () => (
         css={css`
           width: 30px;
           border: 0;
-          margin-top: 0;
+          margin: 0 11px 0 0;
           background: #eee;
           margin-left: 0.5rem;
           transform: scale(1.7);
