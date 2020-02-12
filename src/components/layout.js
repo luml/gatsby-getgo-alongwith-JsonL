@@ -136,14 +136,19 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
-      <button
-        css={css`
-          margin-left: 48.5%;
-        `}
-        onClick={goTop}
-      >
-        Top
-      </button>
+      <div css={css`text-align: center`}>
+        <button
+          css={css`
+            border-radius: 3px;
+            color: white;
+            margin: 0 1rem;
+            background: black;
+          `}
+          onClick={goTop}
+        >
+          Top
+        </button>
+      </div>
       <footer
         css={css`
           font-size: small;
