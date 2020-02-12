@@ -34,6 +34,7 @@ module.exports = {
         path: 'images',
       },
     },
+    // github public api
     {
       resolve: 'gatsby-source-custom-api',
       options: {
