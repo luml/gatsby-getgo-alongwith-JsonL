@@ -8,7 +8,7 @@ const Wave = () => {
         display: flex;
         border-radius: 0.2rem;
         padding: 0.2rem;
-        background: radial-gradient(circle at bottom left, teal, transparent);
+        background: radial-gradient(circle at bottom left, #246767, transparent);
         border: none;
         color: white;
         font-size: 1.25rem;

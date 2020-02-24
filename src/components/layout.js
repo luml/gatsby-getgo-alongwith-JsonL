@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
             transition: all 0.3s ease-in-out;
           }
           body.dark {
-            background-color: black;
+            background-color: #1f1d1f;
             color: white;
             transition: all 0.3s ease-in-out;
 
@@ -75,10 +75,10 @@ const Layout = ({ children }) => {
               color: white;
             }
             div.say-hi {
-              background: teal;
+              background: #246767;
             }
             div.grid-system {
-              background: teal;
+              background: #246767;
               > a {
                 color: hotPink;
               }
