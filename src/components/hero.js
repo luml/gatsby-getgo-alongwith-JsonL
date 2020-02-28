@@ -64,6 +64,7 @@ const Hero = () => {
           css={css`
             font-style: italic;
             opacity: 0.7;
+            letter-spacing: 0.1rem;
           `}
         >
           --Thank you a thousand for reading my blog--
