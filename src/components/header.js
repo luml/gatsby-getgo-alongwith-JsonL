@@ -31,6 +31,8 @@ const Header = () => (
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
     `}
   >
+    {/* TODO import google fonts */}
+    {/* <link href="https://fonts.font.im/css?family=Anton" rel="stylesheet"></link> */}
     <NavLink to="/" fontWeight="bold">
       To Be A Master
     </NavLink>
