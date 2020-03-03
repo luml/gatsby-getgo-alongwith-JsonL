@@ -68,8 +68,10 @@ const Hero = () => {
             background-color: #f3ec78;
             background-image: linear-gradient(#f3ec78, #af4261);
             background-size: 100%;
-            background-clip: text;
-            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
           `}
         >
           --Thank you a thousand for reading my blog--
