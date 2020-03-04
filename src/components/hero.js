@@ -65,7 +65,7 @@ const Hero = () => {
             opacity: 0.7;
             letter-spacing: 0.1rem;
             background-color: #f3ec78;
-            background-image: linear-gradient(#f3ec78, #af4261);
+            background-image: linear-gradient(rgb(22,10,256),rgb(218,26,80));
             background-size: 100%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
