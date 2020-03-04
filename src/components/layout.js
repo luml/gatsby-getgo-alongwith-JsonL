@@ -83,6 +83,9 @@ const Layout = ({ children }) => {
                 color: hotPink;
               }
             }
+            a:visited {
+              color: rgb(216, 0, 216);
+            }
             .head-hero {
               h1,
               p,
