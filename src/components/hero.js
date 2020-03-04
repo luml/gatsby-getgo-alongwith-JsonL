@@ -56,9 +56,9 @@ const Hero = () => {
   return (
     <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextBox className="head-hero">
-        <h1>Frontend Masters + Gatsby &hearts;</h1>
-        <p>
-          Hello from Beijing! <Link to="/about/">Learn about me &rarr;</Link>
+        <h1 css={css`color: rgb(26, 96, 222);`}>Frontend Masters + Gatsby &hearts;</h1>
+        <p css={css`color: rgb(26, 96, 180);`}>
+          Hello from Beijing! <Link to="/about/" css={css`color: rgb(26, 96, 256);`}>Learn about me &rarr;</Link>
         </p>
         <h6
           css={css`
