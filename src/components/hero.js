@@ -31,7 +31,6 @@ const TextBox = styled('div')`
 
   p,
   a {
-    color: #222;
     margin-top: 0;
   }
 
