@@ -83,6 +83,9 @@ const Layout = ({ children }) => {
                 color: hotPink;
               }
             }
+            div.grid-system:hover {
+              background: rgb(36, 151, 153);
+            }
             main a:visited {
               color: rgb(216, 0, 216);
             }
