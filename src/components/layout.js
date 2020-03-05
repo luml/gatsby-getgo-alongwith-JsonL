@@ -92,6 +92,7 @@ const Layout = ({ children }) => {
             .head-hero {
               h1,
               p,
+              p > a,
               h6 {
                 color: black;
               }
