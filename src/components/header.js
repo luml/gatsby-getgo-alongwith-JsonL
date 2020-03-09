@@ -62,7 +62,7 @@ const Header = () => (
         onClick={changeMode}
       >
         <span role="img" aria-label="Active mode">
-          🌙
+          🌛
         </span>
       </button>
     </nav>
@@ -73,7 +73,7 @@ function changeMode() {
   if (document.querySelector('body').classList.contains('dark')) {
     window.localStorage.setItem('theme', 'light');
     document.querySelector('body').classList.remove('dark');
-    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌙';
+    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌛';
   } else {
     window.localStorage.setItem('theme', 'dark');
     document.querySelector('body').classList.add('dark');
