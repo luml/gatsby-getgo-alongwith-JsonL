@@ -28,7 +28,6 @@ const About = ({ data }) => (
           flex-direction: row-reverse;
           background: #22222222;
           box-shadow: 0 1px 10px #22222244;
-          height: 212px;
         }
       `}
     >
