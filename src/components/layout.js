@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
               color: white;
             }
             .say-hi {
-              background: #246767;
+              background: linear-gradient(90deg, teal, black);
             }
             .say-hi>div>picture>img {
               margin-top: 0;
