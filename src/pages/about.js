@@ -33,7 +33,8 @@ const About = ({ data }) => (
     >
       <Img
         css={css`
-          margin-top: -1rem;
+          margin-top: 0;
+          border-radius: 50%;
         `}
         fixed={data.file.childImageSharp.fixed}
         alt="a profile picture"
