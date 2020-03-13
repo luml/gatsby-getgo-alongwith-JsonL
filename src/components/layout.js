@@ -80,9 +80,6 @@ const Layout = ({ children }) => {
             .say-hi {
               background: linear-gradient(90deg, teal, black);
             }
-            .say-hi>div>picture>img {
-              margin-top: 0;
-            }
             .grid-system {
               background: #246767;
               > a {
