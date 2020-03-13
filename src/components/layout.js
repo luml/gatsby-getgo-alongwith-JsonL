@@ -39,6 +39,9 @@ const Layout = ({ children }) => {
             > div {
               margin-top: 0;
             }
+            .say-hi>div>picture>img {
+              margin-top: 0;
+            }
           }
           ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
           body {
