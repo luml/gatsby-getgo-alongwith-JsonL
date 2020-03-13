@@ -33,7 +33,6 @@ const About = ({ data }) => (
     >
       <Img
         css={css`
-          margin-top: 0;
           border-radius: 50%;
         `}
         fixed={data.file.childImageSharp.fixed}

@@ -74,16 +74,19 @@ const Layout = ({ children }) => {
             article {
               color: white;
             }
-            div.say-hi {
+            .say-hi {
               background: #246767;
             }
-            div.grid-system {
+            .say-hi>div>picture>img {
+              margin-top: 0;
+            }
+            .grid-system {
               background: #246767;
               > a {
                 color: hotPink;
               }
             }
-            div.grid-system:hover {
+            .grid-system:hover {
               background: rgb(36, 151, 153);
             }
             main a:visited {
