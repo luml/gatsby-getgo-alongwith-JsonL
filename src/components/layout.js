@@ -42,17 +42,21 @@ const Layout = ({ children }) => {
             .say-hi>div>picture>img {
               margin-top: 0;
             }
+            span[aria-label="Active mode"] {
+              ${'' /* TODO shift logo smothly */}
+              transition: all 0.3s ease-in-out;
+            }
           }
           ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
           body {
             background-color: white;
             color: black;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
           }
           body.dark {
             background-color: #1f1d1f;
             color: white;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
 
             header {
               background: black;
