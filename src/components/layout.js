@@ -42,10 +42,6 @@ const Layout = ({ children }) => {
             .say-hi>div>picture>img {
               margin-top: 0;
             }
-            span[aria-label="Active mode"] {
-              ${'' /* TODO shift logo smothly */}
-              transition: all 0.3s ease-in-out;
-            }
           }
           ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
           body {
