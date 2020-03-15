@@ -6,7 +6,7 @@ const Mailbox = () => {
     <div
       css={css`
         display: flex;
-        background: radial-gradient(circle at bottom left, #246767 93.7%, transparent);
+        background: radial-gradient(circle at bottom left, #246767 90%, transparent);
         border: none;
         color: white;
         font-size: 1.25rem;
