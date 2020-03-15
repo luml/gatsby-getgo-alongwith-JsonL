@@ -72,7 +72,9 @@ const Header = () => (
 
 function changeMode() {
   document.querySelector('.modeToggle').addEventListener("click", function() {
-    document.querySelector('body').classList.toggle("dark");
+    if(document.querySelector("body").className === "" || document.querySelector("body").className === 'dark'){
+      document.querySelector('body').classList.toggle("dark");
+    }
   })
 
   if (document.querySelector('body').classList.contains('dark')) {
