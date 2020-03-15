@@ -59,6 +59,7 @@ const Header = () => (
           margin-left: 0.5rem;
           transform: scale(1.7);
         `}
+        className="modeToggle"
         onClick={changeMode}
       >
         <span role="img" aria-label="Active mode">
@@ -70,14 +71,14 @@ const Header = () => (
 );
 
 function changeMode() {
+  document.querySelector('.modeToggle').addEventListener("click", function() {
+    document.querySelector('body').classList.toggle("dark");
+  })
+
   if (document.querySelector('body').classList.contains('dark')) {
-    window.localStorage.setItem('theme', 'light');
-    document.querySelector('body').classList.remove('dark');
-    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌛';
-  } else {
-    window.localStorage.setItem('theme', 'dark');
-    document.querySelector('body').classList.add('dark');
     document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
+  } else {
+    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌛';
   }
 }
 
