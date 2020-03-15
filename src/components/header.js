@@ -59,7 +59,7 @@ const Header = () => (
           margin-left: 0.5rem;
           transform: scale(1.7);
         `}
-        className="modeToggle"
+        onClick={changeMode}
       >
         <span role="img" aria-label="Active mode">
           🌛
@@ -69,18 +69,20 @@ const Header = () => (
   </header>
 );
 
-// function changeMode() {
-  document.querySelector('.modeToggle').addEventListener("click", function() {
-    if(document.querySelector("body").className === "" || document.querySelector("body").className === 'dark'){
-      document.querySelector('body').classList.toggle("dark");
-    }
-  })
-
+function changeMode() {
+  // TODO toggle here doesn't work
+  // document.querySelector('.modeToggle').addEventListener("click", function() {
+  //   if(document.querySelector("body").className === "" || document.querySelector("body").className === 'dark'){
+  //     document.querySelector('body').classList.toggle("dark");
+  //   }
+  // })
   if (document.querySelector('body').classList.contains('dark')) {
-    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
-  } else {
+    document.querySelector('body').classList.remove('dark');
     document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌛';
+  } else {
+    document.querySelector('body').classList.add('dark');
+    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
   }
-// }
+}
 
 export default Header;
