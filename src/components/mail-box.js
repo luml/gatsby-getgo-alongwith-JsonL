@@ -13,7 +13,9 @@ const Mailbox = () => {
         max-width: 550px;
       `}
     >
-      <p>
+      <p css={css`
+        padding: 1rem;
+      `}>
         Please note that you may not reach me. This is because I am nobody and
         far away and probably didn’t see you.
       </p>

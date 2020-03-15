@@ -15,7 +15,9 @@ const Wave = () => {
         max-width: 550px;
       `}
     >
-      <p>
+      <p css={css`
+        padding: 1rem;
+      `}>
         You can get in touch with me by opening the nearest window and yelling
         out of it real loud. Because I live in far far away in Beijing, China.
       </p>
