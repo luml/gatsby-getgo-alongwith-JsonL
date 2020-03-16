@@ -26,7 +26,7 @@ const useInstagram = () => {
   return data.allPosts.nodes.map(node => ({
     id: node.id,
     url: node.url,
-    name: node.name,
+    name: node.name.toUpperCase(),
     description: node.description,
     homepage: node.homepage,
     fork: node.fork,
