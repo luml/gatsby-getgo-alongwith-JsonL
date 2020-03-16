@@ -24,7 +24,7 @@ const usePosts = () => {
   `);
 
   return data.allMdx.nodes.map(post => ({
-    title: post.frontmatter.title,
+    title: post.frontmatter.title.toUpperCase(),
     author: post.frontmatter.author,
     slug: post.frontmatter.slug,
     image: post.frontmatter.image,
