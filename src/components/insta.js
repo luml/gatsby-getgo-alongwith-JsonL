@@ -31,7 +31,7 @@ const Insta = () => {
               border-radius: 0.2rem;
               display: block;
               max-width: calc(100%);
-              height: auto;
+              height: calc(10em + 50px);
               transition: 200ms box-shadow linear;
               padding: 0.5rem 0 0.5rem 0.2rem;
               text-decoration: none;
@@ -69,6 +69,7 @@ const Insta = () => {
               🐱
               <h3
                 css={css`
+                  font-size: 1em;
                   text-decoration: none;
                   margin: 0 0 0 5px;
                 `}
@@ -149,7 +150,7 @@ const Insta = () => {
                   }
                 `}
               >
-                {hub.description}
+                “ {hub.description} ”
               </p>
             )}
           </div>
