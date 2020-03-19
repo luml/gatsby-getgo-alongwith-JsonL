@@ -40,7 +40,7 @@ const Insta = () => {
 
               :focus,
               :hover {
-                box-shadow: 0 10px 40px #22222244;
+                box-shadow: 0 10px 20px #22222244;
                 z-index: 10;
                 background: #22222222;
                 transform: translate(0.1rem, -0.2rem);
