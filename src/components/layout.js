@@ -50,6 +50,7 @@ const Layout = ({ children }) => {
             transition: all 0.5s ease-in-out;
           }
           body.dark {
+            ${'' /* TODO need to classify color theme */}
             --dark-bg: #1f1d1f;
             --dark-hd: black;
             --dark-content: white;
