@@ -50,20 +50,24 @@ const Layout = ({ children }) => {
             transition: all 0.5s ease-in-out;
           }
           body.dark {
-            background-color: #1f1d1f;
-            color: white;
+            --dark-bg: #1f1d1f;
+            --dark-hd: black;
+            --dark-content: white;
+
+            background-color: var(--dark-bg);
+            color: var(--dark-content);
             transition: all 0.5s ease-in-out;
 
             header {
-              background: black;
+              background: var(--dark-hd);
               a {
-                color: white;
+                color: var(--dark-content);
               }
               a.current-page {
                 border-bottom: 1px solid #eee;
               }
               button {
-                background: black;
+                background: var(--dark-hd);
               }
             }
             h1,
@@ -75,10 +79,10 @@ const Layout = ({ children }) => {
             em,
             strong,
             article {
-              color: white;
+              color: var(--dark-content);
             }
             .say-hi {
-              background: linear-gradient(90deg, teal, black);
+              background: linear-gradient(90deg, teal, var(--dark-hd));
             }
             .grid-system {
               background: #246767;
@@ -97,7 +101,7 @@ const Layout = ({ children }) => {
               p,
               p > a,
               h6 {
-                color: black;
+                color: var(--dark-hd);
               }
             }
           }
