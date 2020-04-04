@@ -44,7 +44,7 @@ const Hero = () => {
     query {
       image: file(relativePath: { eq: "zhang-kaiyv-beijing.jpg" }) {
         sharp: childImageSharp {
-          fluid {
+          fluid(grayscale: true) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
