@@ -11,7 +11,7 @@ const usePosts = () => {
             slug
             image {
               sharp: childImageSharp {
-                fluid(maxWidth: 100, maxHeight: 100, grayscale: true) {
+                fluid(maxWidth: 100, maxHeight: 100) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
