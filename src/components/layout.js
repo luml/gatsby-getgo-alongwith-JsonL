@@ -54,6 +54,7 @@ const Layout = ({ children }) => {
             --dark-bg: #1f1d1f;
             --dark-hd: black;
             --dark-content: white;
+            --hot-pink: hotPink;
 
             background-color: var(--dark-bg);
             color: var(--dark-content);
@@ -88,7 +89,7 @@ const Layout = ({ children }) => {
             .grid-system {
               background: #246767;
               > a {
-                color: hotPink;
+                color: var(--hot-pink);
               }
             }
             .grid-system:hover {

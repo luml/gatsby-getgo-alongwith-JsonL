@@ -45,7 +45,7 @@ const About = ({ data }) => (
             font-size: small;
             font-family: -apple-system-body;
             direction: rtl;
-            margin-right: 1rem;
+            margin: 1rem;
 
             :first-letter {
               font-size: 20px;
