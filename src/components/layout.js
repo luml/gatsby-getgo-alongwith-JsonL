@@ -48,6 +48,18 @@ const Layout = ({ children }) => {
             background-color: white;
             color: black;
             transition: all 0.5s ease-in-out;
+
+            ${'' /* Rotate to left for light mode */}
+            .company {
+              padding: 20px;
+              color: black;
+              transform: skewY(-5deg);
+            }
+            .experience {
+              margin: 0.8em 0;
+              maxWidth: 50em;
+              transform: skewY(5deg);
+            }
           }
           body.dark {
             ${'' /* TODO need to classify color theme */}
@@ -105,6 +117,17 @@ const Layout = ({ children }) => {
               h6 {
                 color: var(--dark-hd);
               }
+            }
+            ${'' /* Rotate to right for dark mode */}
+            .company {
+              padding: 20px;
+              color: black;
+              transform: skewY(5deg);
+            }
+            .experience {
+              margin: 0.8em 0;
+              maxWidth: 50em;
+              transform: skewY(-5deg);
             }
           }
 
