@@ -63,7 +63,6 @@ const Layout = ({ children }) => {
             }
           }
           body.dark {
-            ${'' /* TODO need to classify color theme */}
             --dark-bg: #1f1d1f;
             --dark-hd: black;
             --dark-content: white;
@@ -131,13 +130,6 @@ const Layout = ({ children }) => {
               transform: skewY(-5deg);
             }
           }
-
-          ${'' /* @media screen and (prefers-color-scheme: dark) {
-            body {
-              background-color: black;
-              color: white;
-            }
-          } */}
 
           h1,
           h2,
