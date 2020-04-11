@@ -156,7 +156,10 @@ const Insta = () => {
           </div>
         ))}
       </div>
-      <a href={`https://github.com/${login}`}>See more on Github &rarr;</a>
+      <div>
+        {/* Put inline element a into a block element div, so it can have attribute margin-top */}
+        <a href={`https://github.com/${login}`}>See more on Github &rarr;</a>
+      </div>
     </>
   );
 };
