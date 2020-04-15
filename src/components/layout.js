@@ -61,6 +61,11 @@ const Layout = ({ children }) => {
               maxWidth: 50em;
               transform: skewY(5deg);
             }
+            ${'' /* TODO: CSS pseudo-elements selector to change li; doesn't work */}
+            .experience ul li::marker {
+              content: 🥦;
+              color: red;
+            }
           }
           body.dark {
             --dark-bg: #1f1d1f;
