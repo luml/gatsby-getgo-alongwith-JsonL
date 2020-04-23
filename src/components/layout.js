@@ -42,6 +42,9 @@ const Layout = ({ children }) => {
             .say-hi>div>picture>img {
               margin-top: 0;
             }
+            h1.post {
+              text-shadow: 1px 1px 2px blue;
+            }
           }
           ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
           body {
