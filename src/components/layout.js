@@ -61,9 +61,9 @@ const Layout = ({ children }) => {
               maxWidth: 50em;
               transform: skewY(5deg);
             }
-            ${'' /* TODO: CSS pseudo-elements selector to change li; doesn't work */}
-            .experience ul li::marker {
-              content: 🥦;
+            ${'' /* CSS pseudo-elements selector to change li; content property doesn't work */}
+            .experience > ul li::marker {
+              ${'' /* content: 🥦; */}
               color: red;
             }
           }
