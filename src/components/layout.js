@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
             .say-hi>div>picture>img {
               margin-top: 0;
             }
-            h1.post {
+            .shadowEffect {
               text-shadow: 1px 1px 2px blue;
             }
           }

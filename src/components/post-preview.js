@@ -36,7 +36,7 @@ const PostPreview = ({ post }) => (
     </Link>
     <div>
       <h3>
-        <Link to={post.slug} css={css`
+        <Link className="shadowEffect" to={post.slug} css={css`
           text-shadow: 1px 1px 1px blue;
         `}>{post.title}</Link>
       </h3>

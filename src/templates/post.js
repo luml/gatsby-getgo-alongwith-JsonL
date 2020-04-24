@@ -27,7 +27,7 @@ class PostTemplate extends React.Component {
     return (
       <Layout>
         <ReadLink to="/">&larr; back to all posts</ReadLink>
-        <h1 className="post">{post.frontmatter.title}</h1>
+        <h1 className="shadowEffect">{post.frontmatter.title}</h1>
         <p
           css={css`
             font-size: 0.75rem;

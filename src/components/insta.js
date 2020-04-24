@@ -80,7 +80,7 @@ const Insta = () => {
             </div>
 
             {hub.homepage !== '' && (
-              <a
+              <a className="shadowEffect"
                 css={css`
                   color: darkcyan;
                   text-decoration: none;
