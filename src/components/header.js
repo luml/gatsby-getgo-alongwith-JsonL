@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { Link } from 'gatsby';
+import DarkModeToggle from './modeToggle'
 
 const NavLink = styled(Link)`
   color: #222;
@@ -50,39 +51,10 @@ const Header = () => (
       <NavLink to="/contact/" activeClassName="current-page">
         Contact
       </NavLink>
-      <button
-        css={css`
-          width: 30px;
-          border: 0;
-          margin: 0 11px 0 0;
-          background: #eee;
-          margin-left: 0.5rem;
-          transform: scale(1.7);
-        `}
-        onClick={changeMode}
-      >
-        <span role="img" aria-label="Active mode">
-          🌛
-        </span>
-      </button>
+      <DarkModeToggle />
     </nav>
   </header>
 );
 
-function changeMode() {
-  // TODO toggle here doesn't work
-  // document.querySelector('.modeToggle').addEventListener("click", function() {
-  //   if(document.querySelector("body").className === "" || document.querySelector("body").className === 'dark'){
-  //     document.querySelector('body').classList.toggle("dark");
-  //   }
-  // })
-  if (document.querySelector('body').classList.contains('dark')) {
-    document.querySelector('body').classList.remove('dark');
-    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌛';
-  } else {
-    document.querySelector('body').classList.add('dark');
-    document.querySelector('span[aria-label="Active mode"]').innerHTML = '🌞';
-  }
-}
 
 export default Header;

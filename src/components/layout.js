@@ -45,9 +45,17 @@ const Layout = ({ children }) => {
             .shadowEffect {
               text-shadow: 1px 1px 1px darkcyan;
             }
+            .toggle-mode {
+              margin-top: -1rem;
+              float: right;
+            }
+            .toggle-mode>button {
+              border-style: none;
+              background: #eee;
+            }
           }
           ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
-          body {
+          body.light-mode {
             background-color: white;
             color: black;
             transition: all 0.5s ease-in-out;
@@ -64,13 +72,11 @@ const Layout = ({ children }) => {
               maxWidth: 50em;
               transform: skewY(5deg);
             }
-            ${'' /* CSS pseudo-elements selector to change li; content property doesn't work */}
             .experience > ul li::marker {
-              ${'' /* content: 🥦; */}
               color: red;
             }
           }
-          body.dark {
+          body.dark-mode {
             --dark-bg: #1f1d1f;
             --dark-hd: black;
             --dark-content: white;
