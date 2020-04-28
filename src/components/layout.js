@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
               margin-top: 0;
             }
             .shadowEffect {
-              text-shadow: 1px 1px 2px blue;
+              text-shadow: 1px 1px 1px darkcyan;
             }
           }
           ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
