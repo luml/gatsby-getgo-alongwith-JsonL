@@ -28,6 +28,12 @@ const PostPreview = ({ post }) => (
         css={css`
           * {
             margin-top: 0;
+            :hover {
+              transform: scale(1.1)
+            }
+          }
+          img {
+            transition: all 500ms ease 0s!important
           }
         `}
         fluid={post.image.sharp.fluid}
@@ -45,5 +51,6 @@ const PostPreview = ({ post }) => (
     </div>
   </article>
 );
+
 
 export default PostPreview;
