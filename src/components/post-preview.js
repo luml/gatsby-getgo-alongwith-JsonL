@@ -28,12 +28,14 @@ const PostPreview = ({ post }) => (
         css={css`
           * {
             margin-top: 0;
-            :hover {
-              transform: scale(1.1)
-            }
+          }
+          img:hover {
+              transform: scale(1.1);
+              filter: brightness(130%) opacity(1) contrast(100%);
           }
           img {
-            transition: all 500ms ease 0s!important
+            transition: all 500ms ease 0s!important;
+            filter: brightness(70%) opacity(0.7) contrast(200%);
           }
         `}
         fluid={post.image.sharp.fluid}
