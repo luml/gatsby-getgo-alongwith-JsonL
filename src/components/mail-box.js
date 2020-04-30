@@ -16,8 +16,8 @@ const Mailbox = () => {
       <p css={css`
         padding: 1rem;
       `}>
-        Please note that you may not reach me. This is because I am nobody and
-        far away and probably didn’t see you.
+        Please note that you may not reach me. This is because I am nowhere and
+        everywhere or probably just too busy.
       </p>
       <a
         css={css`
