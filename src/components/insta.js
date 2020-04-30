@@ -57,23 +57,13 @@ const Insta = () => {
                 }
               `}
             >
-              {/* <img
-                alt="Kitten"
-                src="https://placekitten.com/300/300"
-                css={css`
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 50%;
-                `}
-              /> */}
-              🐱
+              <span role="img" aria-label="a kitten">🐱</span>
               <h3
                 css={css`
                   font-size: 1em;
                   text-decoration: none;
                   margin: 0 0 0 5px;
                 `}
-                //   href={`https://github.com/${login}/${hub.name}`}
               >
                 {hub.name}
               </h3>
@@ -85,46 +75,11 @@ const Insta = () => {
                   color: darkcyan;
                   text-decoration: none;
                   font-size: smaller;
-
-                  > span {
-                    animation-name: flow-and-shake;
-                    animation-duration: calc(var(--speed) * 1s);
-                    animation-iteration-count: infinite;
-                    animation-timing-function: ease-in-out;
-                  }
-
-                  @keyframes flow-and-shake {
-                    0%,
-                    100% {
-                      transform: translate(
-                          calc(var(--x) * -1%),
-                          calc(var(--y) * -1%)
-                        )
-                        rotate(calc(var(--rotation) * -1deg));
-                    }
-                    50% {
-                      transform: translate(
-                          calc(var(--x) * 1%),
-                          calc(var(--y) * 1%)
-                        )
-                        rotate(calc(var(--rotation) * 1deg));
-                    }
-                  }
-
-                  ${'' /* couldn't animate */}
-
-                  :hover > span {
-                    --speed: 0.1;
-                    --x: 1;
-                    --y: -1;
-                    --rotation: -1;
-                  }
                 `}
                 href={`${hub.homepage}`}
               >
-                {hub.homepage}
                 <span role="img" aria-label="homepage-url">
-                  👉🏻
+                  👉{hub.homepage}
                 </span>
               </a>
             )}
@@ -135,8 +90,8 @@ const Insta = () => {
                   text-decoration: none;
                 `}
               >
-                coming soon
                 <span role="img" aria-label="siteUrl">
+                coming soon
                   💪
                 </span>
               </p>

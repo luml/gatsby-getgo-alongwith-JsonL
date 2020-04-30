@@ -46,15 +46,15 @@ const Layout = ({ children }) => {
               text-shadow: 1px 1px 1px darkcyan;
             }
             .toggle-mode {
-              margin-top: -1rem;
+              margin-top: 0;
               float: right;
             }
             .toggle-mode>button {
+              margin-top: 0;
               border-style: none;
               background: #eee;
             }
           }
-          ${'' /* Remember you can reverse it and go dark by default but change to a light theme if a user specifically wants it: */}
           body.light-mode {
             background-color: white;
             color: black;
@@ -72,8 +72,8 @@ const Layout = ({ children }) => {
               maxWidth: 50em;
               transform: skewY(5deg);
             }
-            .experience > ul li::marker {
-              color: red;
+            .toggle-mode > button:first-of-type {
+              display: none;
             }
           }
           body.dark-mode {
@@ -142,6 +142,9 @@ const Layout = ({ children }) => {
               margin: 0.8em 0;
               maxWidth: 50em;
               transform: skewY(-5deg);
+            }
+            .toggle-mode > button:last-of-type {
+              display: none;
             }
           }
 
