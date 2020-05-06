@@ -137,6 +137,7 @@ const Layout = ({ children }) => {
               padding: 20px;
               color: black;
               transform: skewY(5deg);
+              transition: all 0.5s ease-in-out;
             }
             .experience {
               margin: 0.8em 0;
