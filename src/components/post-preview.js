@@ -35,7 +35,7 @@ const PostPreview = ({ post }) => (
           }
           img {
             transition: all 500ms ease 0s!important;
-            filter: brightness(70%) opacity(0.7) contrast(200%);
+            filter: brightness(100%) opacity(0.7) contrast(150%);
           }
         `}
         fluid={post.image.sharp.fluid}
