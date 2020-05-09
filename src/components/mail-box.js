@@ -19,18 +19,15 @@ const Mailbox = () => {
         Please note that you may not reach me. This is because I am nowhere and
         everywhere or probably just too busy.
       </p>
-      <a
-        css={css`
-          height: 25px;
-          margin: 1px auto;
-        `}
-        href="https://www.instagram.com/eliolou01/"
-      >
-        <img
-          src="https://img.icons8.com/doodle/48/000000/instagram-new.png"
-          alt="icons8.com ins icon"
-        />
-      </a>
+      <div className="social-media-block">
+        <ul className="social-media-logo">
+          <li>
+            <a href="https://www.instagram.com/eliolou01/">
+              <span className="fa fa-instagram"></span>
+            </a> 
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

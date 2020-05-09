@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
             box-sizing: border-box;
             margin: 0;
           }
+          @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
           /* More info: https://bit.ly/2PsCnzk */
           * + * {
@@ -147,6 +148,73 @@ const Layout = ({ children }) => {
             .toggle-mode > button:last-of-type {
               display: none;
             }
+          }
+          
+          ${'' /* For Twitter Logo */}
+          .social-media-block {
+            height: 25px;
+            margin: 1px auto;
+          }
+          .social-media-logo {
+            position: relative;
+            display: flex;
+            transform: rotate(-25deg) skew(25deg);
+            transform-style: preserve-3d;
+          }
+          .social-media-logo li {
+            position: relative;
+            list-style: none;
+            width: 60px;
+            height: 60px;
+            margin: 0px 20px;
+          }
+          .social-media-logo li:before{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: -5px;
+            width: 100%;
+            height: 10px;
+            background: #1e3f4c;
+            trnasform-origin: top;
+            transform: skewX(-41deg);
+          }
+          .social-media-logo li:after{
+            content: '';
+            position: absolute;
+            top:5px;
+            left: -9px;
+            width: 9px;
+            height: 100%;
+            background: #1e3f4c;
+            trnasform-origin: right;
+            transform: skewY(-49deg);
+          }
+          .social-media-logo li span{
+            position: absolute;
+            top: 0;
+            lef: 0;
+            width: 100%;
+            height: 100%;
+            display: flex !important;
+            background: #315563;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 30px !important;
+          }
+          .social-media-logo li:hover span {
+            z-index: 1000;
+            transition: .3s;
+            color: #fff;
+            box-shadw: -1px 1px 1px rgba(0, 0, 0, .5);
+          }
+          .social-media-logo li:hover span:nth-of-type(1){
+            transform: translate(5px, -5px);
+            opacity: .8;
+          }
+          .social-media-logo li:nth-of-type(1):hover span{
+            background: #7097a7 !important;
           }
 
           h1,
