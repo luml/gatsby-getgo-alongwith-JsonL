@@ -150,7 +150,24 @@ const Layout = ({ children }) => {
             }
           }
           
-          ${'' /* For Twitter Logo */}
+          ${'' /* For contact part with ins && twitter */}
+          .contact-box {
+            display: flex;
+            border-radius: 0.2rem;
+            padding: 0.2rem;
+            background: radial-gradient(circle at bottom left, #246767 90%, transparent);
+            border: none;
+            color: white;
+            font-size: 1.25rem;
+            max-width: 550px;
+            height: 200px;
+          }
+          .contact-box > p {
+            padding: 1rem;
+            font-style: italic;
+            overflow: auto;
+
+          }
           .social-media-block {
             height: 25px;
             margin: 1px auto;

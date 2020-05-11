@@ -1,23 +1,11 @@
 import React from 'react';
-import { css } from '@emotion/core';
 
 const Mailbox = () => {
   return (
-    <div
-      css={css`
-        display: flex;
-        background: radial-gradient(circle at bottom left, #246767 90%, transparent);
-        border: none;
-        color: white;
-        font-size: 1.25rem;
-        max-width: 550px;
-      `}
-    >
-      <p css={css`
-        padding: 1rem;
-      `}>
-        Please note that you may not reach me. This is because I am nowhere and
-        everywhere or probably just too busy.
+    <div className="contact-box">
+      <p>
+        Please note that you may not reach me. If you like me also livinng in China. There's might bigger chance then you actually couldn't get reach to me through ins or twitter.
+        But I'd like very much to say hi back to you all.
       </p>
       <div className="social-media-block">
         <ul className="social-media-logo">
