@@ -165,8 +165,9 @@ const Layout = ({ children }) => {
           .contact-box > p {
             padding: 1rem;
             font-style: italic;
+            font-size: 1em;
             overflow: auto;
-
+            color: beige;
           }
           .social-media-block {
             height: 25px;
