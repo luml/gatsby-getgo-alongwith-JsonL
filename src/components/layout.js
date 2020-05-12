@@ -40,6 +40,9 @@ const Layout = ({ children }) => {
             > div {
               margin-top: 0;
             }
+            .say-hi {
+              contain: paint;
+            }
             .say-hi>div>picture>img {
               margin-top: 0;
             }
@@ -113,6 +116,12 @@ const Layout = ({ children }) => {
             .say-hi {
               background: linear-gradient(90deg, teal, var(--dark-hd));
             }
+            .say-hi p {
+              color: beige;
+            }
+            .say-hi p a {
+              color: lightskyblue;
+            }
             .grid-system {
               background: #246767;
               > a {
@@ -161,6 +170,7 @@ const Layout = ({ children }) => {
             font-size: 1.25rem;
             max-width: 550px;
             height: 200px;
+            contain: layout;
           }
           .contact-box > p {
             padding: 1rem;
