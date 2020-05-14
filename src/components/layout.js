@@ -175,7 +175,7 @@ const Layout = ({ children }) => {
           .contact-box > p {
             padding: 1rem;
             font-style: italic;
-            font-size: 1em;
+            font-size: 0.9em;
             overflow: auto;
             color: beige;
           }
