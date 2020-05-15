@@ -164,7 +164,7 @@ const Layout = ({ children }) => {
             display: flex;
             border-radius: 0.2rem;
             padding: 0.2rem;
-            background: radial-gradient(circle at bottom left, #246767 90%, transparent);
+            background: radial-gradient(circle at bottom left, #246767 80%, transparent);
             border: none;
             color: white;
             font-size: 1.25rem;
@@ -173,7 +173,7 @@ const Layout = ({ children }) => {
             contain: layout;
           }
           .contact-box > p {
-            padding: 1rem;
+            padding: 1rem 0 1rem 1rem;
             font-style: italic;
             font-size: 0.9em;
             overflow: auto;
