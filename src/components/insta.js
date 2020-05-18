@@ -3,7 +3,8 @@ import { css } from '@emotion/core';
 import useInstagram from '../hooks/use-instagram';
 
 const Insta = () => {
-  const instaPosts = useInstagram();
+  let instaPosts = useInstagram();
+  instaPosts = instaPosts.filter(hub => hub.homepage !== '' && hub.description !== '')
   const { login } = instaPosts[0];
   return (
     <>
@@ -68,46 +69,28 @@ const Insta = () => {
                 {hub.name}
               </h3>
             </div>
-
-            {hub.homepage !== '' && (
-              <a className="shadowEffect"
-                css={css`
-                  color: darkcyan;
-                  text-decoration: none;
+            <a className="shadowEffect"
+              css={css`
+                color: darkcyan;
+                text-decoration: none;
+                font-size: smaller;
+              `}
+              href={`${hub.homepage}`}
+            >
+              <span role="img" aria-label="homepage-url">
+                👉{hub.homepage}
+              </span>
+            </a>
+            <p
+              css={css`
+                {
                   font-size: smaller;
-                `}
-                href={`${hub.homepage}`}
-              >
-                <span role="img" aria-label="homepage-url">
-                  👉{hub.homepage}
-                </span>
-              </a>
-            )}
-            {hub.homepage === '' && (
-              <p
-                css={css`
-                  color: peru;
-                  text-decoration: none;
-                `}
-              >
-                <span role="img" aria-label="siteUrl">
-                coming soon
-                  💪
-                </span>
-              </p>
-            )}
-            {hub.description !== 'null' && (
-              <p
-                css={css`
-                  {
-                    font-size: smaller;
-                    font-style: italic;
-                  }
-                `}
-              >
-                “ {hub.description} ”
-              </p>
-            )}
+                  font-style: italic;
+                }
+              `}
+            >
+              “ {hub.description} ”
+            </p>
           </div>
         ))}
       </div>
