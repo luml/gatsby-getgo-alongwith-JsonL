@@ -10,7 +10,7 @@ const Insta = () => {
       <h2>Github repos from @{login}</h2>
       <div
         css={css`
-           {
+          {
             display: grid;
             max-width: 550px;
             justify-items: stretch;
@@ -51,7 +51,7 @@ const Insta = () => {
           >
             <div
               css={css`
-                 {
+                {
                   display: flex;
                   flex-direction: row;
                 }
@@ -99,7 +99,7 @@ const Insta = () => {
             {hub.description !== 'null' && (
               <p
                 css={css`
-                   {
+                  {
                     font-size: smaller;
                     font-style: italic;
                   }
