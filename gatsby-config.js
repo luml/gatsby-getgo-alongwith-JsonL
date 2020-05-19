@@ -27,7 +27,7 @@ module.exports = {
       },
     },
     {
-      // how to sort files by date
+    // how to sort files by date
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
@@ -41,7 +41,7 @@ module.exports = {
         path: 'images',
       },
     },
-    // github public api
+    // github public api only for public repositories
     {
       resolve: 'gatsby-source-custom-api',
       options: {
@@ -63,5 +63,16 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "Fauna",
+        fieldName: "fauna",
+        url: "https://graphql.fauna.com/graphql",
+        headers: {
+          Authorization: "Bearer <fnADsHy0FgACC6JbhLILco1V-ZXRhf-VP1EqZUxC>",
+        },
+      },
+    }
   ],
 };
