@@ -70,7 +70,7 @@ module.exports = {
         fieldName: "fauna",
         url: "https://graphql.fauna.com/graphql",
         headers: {
-          Authorization: "Bearer <fnADsHy0FgACC6JbhLILco1V-ZXRhf-VP1EqZUxC>",
+          Authorization: "Bearer <fnADsR6s6RACADRmJymCdil-2330g4wtv-E3DZGh>",
         },
       },
     }
