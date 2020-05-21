@@ -2,19 +2,26 @@ import { graphql } from "gatsby"
 
 const faunaData = () => {
     const data = (graphql`
-    {
+      {
         fauna {
-          allProducts {
-            data { _id title description }
-          }
+              allTodos {
+                data { _id title completed }
+              }
         }
       }
     `);
 
-    return data.fauna.allProducts.map(product => ({
-        title: product.title,
-        description: product.description
-    }))
+    // return data.fauna.allTodos.map(todo => ({
+    //     title: todo.title,
+    //     completed: todo.completed
+    // }))
+
+    console.log(data)
+
+    return data.map(todo => ({
+      title: todo.title,
+      completed: todo.completed
+  }))
 }
 
 

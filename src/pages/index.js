@@ -4,12 +4,13 @@ import usePosts from '../hooks/use-posts';
 import Hero from '../components/hero';
 import Insta from '../components/insta';
 import PostPreview from '../components/post-preview';
-// import FaunaData from '../hooks/use-fauna';
+import FaunaData from '../hooks/use-fauna';
 
 
 export default () => {
   const posts = usePosts();
   // const faunas = FaunaData()
+  // console.log(faunas)
   return (
     <>
       <Hero />
@@ -20,8 +21,8 @@ export default () => {
         ))}
         <Insta />
         {/* <ul>
-        {faunas.map(product => (
-          <li>{product.title} - {product.description}</li>
+        {faunas.map(todo => (
+          <li>{todo.title} - {todo.completed}</li>
         ))}
         </ul> */}
       </Layout>
