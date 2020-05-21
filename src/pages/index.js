@@ -4,13 +4,12 @@ import usePosts from '../hooks/use-posts';
 import Hero from '../components/hero';
 import Insta from '../components/insta';
 import PostPreview from '../components/post-preview';
-import FaunaData from '../hooks/use-fauna';
+// import FaunaData from '../hooks/use-fauna';
 
 
 export default () => {
   const posts = usePosts();
   // const faunas = FaunaData()
-  // console.log(faunas)
   return (
     <>
       <Hero />

@@ -63,16 +63,16 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-source-graphql",
-      options: {
-        typeName: "Fauna",
-        fieldName: "fauna",
-        url: "https://graphql.fauna.com/graphql",
-        headers: {
-          Authorization: "Bearer <fnADsR6s6RACADRmJymCdil-2330g4wtv-E3DZGh>",
-        },
-      },
-    }
+    // {
+    //   resolve: "gatsby-source-graphql",
+    //   options: {
+    //     typeName: "Fauna",
+    //     fieldName: "fauna",
+    //     url: "https://graphql.fauna.com/graphql",
+    //     headers: {
+    //       Authorization: "Bearer <fnADsR6s6RACADRmJymCdil-2330g4wtv-E3DZGh>",
+    //     },
+    //   },
+    // }
   ],
 };

@@ -1,28 +1,22 @@
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
-const faunaData = () => {
-    const data = (graphql`
-      {
-        fauna {
-              allTodos {
-                data { _id title completed }
-              }
-        }
-      }
-    `);
+// const faunaData = () => {
+//     const data = (graphql`
+//       {
+//         fauna {
+//               allTodos {
+//                 data { _id title completed }
+//               }
+//         }
+//       }
+//     `);
 
-    // return data.fauna.allTodos.map(todo => ({
-    //     title: todo.title,
-    //     completed: todo.completed
-    // }))
-
-    console.log(data)
-
-    return data.map(todo => ({
-      title: todo.title,
-      completed: todo.completed
-  }))
-}
+//     // TODO the graphql is working, but data.fauna is undefined 
+//     return data.fauna.allTodos.map(todo => ({
+//         title: todo.title,
+//         completed: todo.completed
+//     }))
+// }
 
 
-export default faunaData
+// export default faunaData
