@@ -33,7 +33,7 @@ const Header = () => (
     `}
   >
     <NavLink to="/" fontWeight="bold">
-      To Be A Master
+      🐳To Be A Master
     </NavLink>
     <nav
       css={css`
