@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby GetGo Along With JsonLengstrof Frontend Masters',
+    title: 'Gatsby GetGo Along With JsonLengstrof At Frontend Masters',
     description:
-      'A site i built along with Json Lenstrof at Frontend Masters Gatsby workshop!',
+      'A site I\'ve building along with Json Lenstrof at Frontend Masters Gatsby workshop!',
   },
   plugins: [
     'gatsby-plugin-emotion',
@@ -27,7 +27,6 @@ module.exports = {
       },
     },
     {
-    // how to sort files by date
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
