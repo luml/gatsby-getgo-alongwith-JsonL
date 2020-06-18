@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
-import { css } from '@emotion/core';
-import Img from 'gatsby-image';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import { css } from "@emotion/core";
+import Img from "gatsby-image";
 
 export const query = graphql`
   query {
@@ -54,8 +54,14 @@ const About = ({ data }) => (
         `}
       >
         This is my first blog website, so far I really don't know what I wanna
-        post. So I made a card list linked my github repos, and thoes are just some very basic and demo-ish small projects. I also wrote some humble words when I got emotional<span role="img" aria-label="funnyface">😛</span>.
-        This blog site is not something another level, it's nothing to show off. But I promise myself I will come back frequently
+        post. So I made a card list linked my github repos, and thoes are just
+        some very basic and demo-ish small projects. I also wrote some humble
+        words when I got emotional
+        <span role="img" aria-label="funnyface">
+          😛
+        </span>
+        . This blog site is not something another level, it's nothing to show
+        off. But I promise to myself I will come back frequently
         <br></br>
         <Link to="/resume/">&rarr;See my resume</Link>
       </p>
