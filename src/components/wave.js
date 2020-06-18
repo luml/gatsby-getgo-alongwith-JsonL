@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Wave = () => {
   return (
@@ -6,8 +6,8 @@ const Wave = () => {
       <p>
         You can get in touch with me by opening the nearest window and yelling
         out of it real loud. Because I live in far far away in Beijing, China.
-        Also, I may not be there for you. Because I'm very important and busy at real life.
-        I'm offline quite often.
+        Also, I may not be there for you. Because I'm very important and busy in
+        real life. I'm offline quite often.
       </p>
       <div className="social-media-block">
         <ul className="social-media-logo">
