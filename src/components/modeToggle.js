@@ -3,7 +3,9 @@ import useDarkMode from 'use-dark-mode';
 
 
 const DarkModeToggle = () => {
-  const darkMode = useDarkMode(false);
+  const currentTime = new Date().getHours();
+  let initialState = true ? currentTime > 18 : false
+  const darkMode = useDarkMode(initialState);
 
   return (
     <div className="toggle-mode">
