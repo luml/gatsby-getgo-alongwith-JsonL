@@ -23,13 +23,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `);
+  `)
 
   if (result.errors) {
-    reporter.panic('failed to create posts', result.errors);
+    reporter.panic('failed to create posts', result.errors)
   }
 
-  const posts = result.data.allMdx.edges;
+  const posts = result.data.allMdx.edges
 
   posts.forEach(post => {
     actions.createPage({
@@ -38,8 +38,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {
         previous: post.previous,
         next: post.next,
-        slug: post.node.frontmatter.slug,
-      },
-    });
-  });
-};
+        slug: post.node.frontmatter.slug
+      }
+    })
+  })
+}
